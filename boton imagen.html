@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Imagen con Botones de Menú</title>
+    <link rel="stylesheet" type="text/css" href="new3.css">
+</head>
+<body>
+    <div class="menu">
+        <button class="menu-button" onclick="showImage('image1')">Imagen 1</button>
+        <button class="menu-button" onclick="showImage('image2')">Imagen 2</button>
+        <button class="menu-button" onclick="showImage('image3')">Imagen 3</button>
+    </div>
+
+    <div class="image-container">
+        <img id="image1" class="image" src="C:\Users\DOCENTE MAÑANA\Downloads\imagen1.jpg">
+        <img id="image2" class="image" src="C:\Users\DOCENTE MAÑANA\Downloads\imagen2.jpg">
+        <img id="image3" class="image" src="C:\Users\DOCENTE MAÑANA\Downloads\imagen3.jpg">
+    </div>
+
+    <script>
+        function showImage(imageId) {
+            // Ocultar todas las imágenes
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.classList.remove('active'));
+
+            // Mostrar la imagen seleccionada
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.classList.add('active');
+        }
+    </script>
+</body>
+</html>

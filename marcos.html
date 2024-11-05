@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Imagen con Botones de Menú</title>
+    <link rel="stylesheet" type="text/css" href="marcos.css">
+</head>
+<body>
+    <div class="menu">
+        <button class="menu-button" onclick="showImage('image1')">Mision</button>
+        <button class="menu-button" onclick="showImage('image2')">Vision</button>
+        <button class="menu-button" onclick="showImage('image3')">Valores</button>
+    </div>
+
+    <div class="image-container">
+        <img id="image1" class="image" src="mision_imagen.png">
+        <img id="image2" class="image" src="vision_imagen.png">
+        <img id="image3" class="image" src="valores_imagen.png">
+    </div>
+
+    <script>
+        function showImage(imageId) {
+            // Ocultar todas las imágenes
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.classList.remove('active'));
+
+            // Mostrar la imagen seleccionada
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.classList.add('active');
+        }
+    </script>
+</body>
+</html>

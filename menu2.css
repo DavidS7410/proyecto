@@ -1,0 +1,307 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  
+}
+
+
+nav {
+	margin: 0;
+	padding:0;
+        position: fixed;
+    	top: 0;
+    	right: 0;
+    	left: 0;
+	overflow: hidden;
+	/*color: #333;*/
+	width: 100%;  
+        float:left;
+      
+}
+
+ul {
+	background-color:#C1F4FC;
+        /*background-color: blue;*/
+	color: #fff;
+	list-style-type: none;
+	padding: 0;
+	float:left;
+	width: 100%;
+}
+
+li {
+	float: left;
+	position: relative;
+}
+
+li:hover {
+	background: #91D6E1 ;
+}
+
+li > a {
+	display: block;
+	color: #fff;
+	/*border: outset 1px #038;*/
+        text-decoration:none;
+	padding: 0.5em 2em;
+}
+
+li > a:hover {
+	background: #91D6E1 ;
+	/*border: outset 1px #37e;*/
+}
+
+li > ul {
+	position: absolute;
+	display: none;
+	float: none;
+	width: auto;
+}
+
+li:hover > ul {
+	position: absolute;
+	display: block;
+}
+
+li > ul > li {
+	float: none;
+	display: block;
+}
+
+li:hover > ul > li:hover > ul {
+	position: absolute;
+	display: block;
+	left: 100%;
+	top: 0;
+}
+
+.contenido {
+       /*width: 800px;*/
+       padding: 60px;
+}
+
+
+.area{
+    background: #fff;  
+    /*background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  */
+    /*top: 100vt;*/
+    width: 100% ;
+    height: 200% ;
+    /*height:100vh;*/
+    
+
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    /*list-style: none;*/
+    list-style-image: url("star-logo.gif");
+    width: 20px;
+    height: 20px;
+    background: #C1F4FC;
+    animation: animate 25s linear infinite;
+    animation-direction: alternate;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+.circles li:nth-child(11){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 0,2;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.P{ 
+   margin-left: 250px;
+   margin-right: 250px;
+}
+
+
+.menu {
+    display: flex;
+}
+
+.menu-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+.menu-button:last-child {
+    margin-right: 0;
+}
+
+
+.image-container {
+    text-align: center;
+}
+
+.image {
+    display: none;
+}
+
+.image.active {
+    display: block;
+} 
+
+header{
+background:url(https://previews.123rf.com/images/skillsup/skillsup1504/skillsup150400261/39121562-fondo-de-conexi%C3%B3n-digital-ilustraci%C3%B3n-del-concepto-de-comunicaci%C3%B3n-sobre-un-fondo-blanco.jpg)no-repeat;
+background-size:cover;
+height:250px;
+overflow:hidden;
+
+{
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+    .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}	
+
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+

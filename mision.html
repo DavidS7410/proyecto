@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>EMI</title>
+<link rel="stylesheet" type="text/css" href="principal.css">
+<link rel="stylesheet" type="text/css" href="marcos.css">
+</head>
+<body>
+	<header>
+        <body background="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Ftecnologia&psig=AOvVaw0VgpEn37MvHnW1AcdF4EYM&ust=1721825522247000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJjH84WavYcDFQAAAAAdAAAAABAE">
+	<h1> Proyecto</h1>
+	</header>
+    <div class="navbar">
+        <a href="principal.html">Inicio</a>
+        <div class="subnav">
+          <button class="subnavbtn">Quienes somos?<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#">Plane estrat&eacute;gico</a>
+            <a href="#">Proyecto</a>
+          </div>
+        </div>   
+        <a href="#soltec">Soluci&oacute;n Tecnol&oacute;gica</a>
+        <a href="#evidencia">Evidencias</a>
+        <div id="google_translate_element" class="google"></div>
+    </div>
+	
+<section>
+    <div class="menu">
+        <button class="menu-button" onclick="showImage('image1','texto1')">Misi&oacute;n</button>
+        <button class="menu-button" onclick="showImage('image2','texto2')">Visi&oacute;n</button>
+        <button class="menu-button" onclick="showImage('image3','texto2')">Valores</button>
+    </div>
+
+    <div class="image-container">
+        <img id="image1" class="image" src="mision.png" width="150"  height="150">
+        <img id="image2" class="image" src="vision.png" width="250"  height="150">
+        <img id="image3" class="image" src="valores.png"width="250"  height="150">
+    
+        <p id="texto1" class="txt">
+            Ser los líderes en la proteccón del menores en cuanto a su relación 
+            con las nuevas tecnologías y sus efectos adversos en el desarrollo 
+            cognitivo y sico social. Ser líderes en innovación y diseños de 
+            actividades alternativas ayudando a los menores en afinzar sus 
+            habilidades  en el uso inocuo de la tecnologia mejorando el  
+            rendimiento academico, social y el aprendizaje.</p>
+        <p id="texto2" class="txt">A pesar de la fuerte resistencia de los seres humanos a vivir gran parte 
+            del tiermpo  frente a las pantallas y las nuevas tecnología,  los menores 
+            deberan reconocer el gran valor de otras alternativas como el deporte en 
+            la ocupación del tiempo libre, el aprendizaje a campo abierto lejos de la
+            abrumadora tecnología abriendo nuevos horizontes cognitivos y mejorando
+            el desarrollo físico y mental para asi formar un estilo de vida mas sano.</p>
+        <p id="texto3" class="txt">Bienestar, colaboracion, ecodesarrollo y creatividad como valoes de nuestros colaboradores.  </p>
+    </div>
+
+    <script>
+        function showImage(imageId,txtId) {
+            // Ocultar todas las imágenes
+            const images = document.querySelectorAll('.image');
+            images.forEach(image => image.classList.remove('active'));
+
+            const textos = document.querySelectorAll('.txt');
+            textos.forEach(txt => txt.classList.remove('visible'));
+
+            // Mostrar la imagen seleccionada
+            const selectedImage = document.getElementById(imageId);
+            selectedImage.classList.add('active');
+
+            // Mostrar la imagen seleccionada
+            const selectedText = document.getElementById(txtId);
+            selectedText.classList.add('visible');
+
+        }
+    </script>
+    
+    
+
+</section>
+<footer>
+	<div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="X.png" alt="X"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados. | <a href="#">Pol&oacute;tica de Privacidad</a> | <a href="#">T&eacute;rminos y Condiciones</a></p>
+        </div>
+    </footer>
+</footer>
+
+
+
+</body>
+ 
+
+</html>

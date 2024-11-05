@@ -1,0 +1,20 @@
+
+.imagen-de-internet {
+	
+    background-image: url('http://especializate.usat.edu.pe/wp-content/uploads/2021/05/Herramientas-esenciales.jpg');
+    height: 20em; /* Alto de tu div */
+    background-attachment:fixed;
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center; /* Centra la imagen en el div */
+
+}
+.titulo_banner{
+	color:blue;
+	text-align:center;
+	padding-top:4em;
+}	
+header{
+	text-align:center;
+	color:blue;
+}
